@@ -7,6 +7,7 @@ namespace PickPoints.Infrastructure.Data
     {
         public PickPointsDbContext CreateDbContext(string[] args)
         {          
+            // TODO Заполнить для создания миграций
             var connectionString = "";
             var builder = new DbContextOptionsBuilder<PickPointsDbContext>();
             builder.UseNpgsql(connectionString);
